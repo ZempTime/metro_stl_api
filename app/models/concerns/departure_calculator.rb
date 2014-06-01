@@ -59,9 +59,8 @@ module DepartureCalculator
     end
 
     def calculate_time(stop1, direction, delay)
-      @trips = stop1.trips.where(:direction_id => direction)
-      day_name = Time.now.strftime('%A').downcase
-
+      @trips = stop1.trips.going_direction(direction)
+      day_name = get_weekday
       @stop_times = stop1.stop_times.order(time_difference: :asc)
 
       calendar_dates = Calendar.all.select do |c|
@@ -89,9 +88,18 @@ module DepartureCalculator
       (stop.time_difference - Time.now.seconds_since_midnight).to_i
     end
 
+    def get_weekday
+      # search for stop_times as though day were yesterday for stop_times between midnight -> 3 a.m.
+      if Time.now < (Time.now.at_midnight + 3.hours)
+        Time.now.yesterday.strftime('%A').downcase
+      else
+        Time.now.strftime('%A').downcase
+      end
+    end
+
     def current_time_difference(delay)
       time = (Time.now + delay.minutes)
       time.seconds_since_midnight
     end
   end #ClassMethods
-end 
+end
