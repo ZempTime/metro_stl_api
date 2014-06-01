@@ -1,0 +1,2 @@
+agency_phone,agency_url,agency_lang,agency_id,agency_name,agency_timezone,agency_fare_url
+314-982-1400,http://www.metrostlouis.org,EN,,Metro St. Louis,America/Chicago,http://www.metrostlouis.org/FaresPasses/FareChart
