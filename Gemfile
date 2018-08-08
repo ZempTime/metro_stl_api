@@ -26,7 +26,7 @@ group :development do
   gem "annotate"
 end
 
-gem 'grape', '~> 0.7.0'
+gem 'grape', '~> 1.1.0'
 gem 'smarter_csv', '~> 1.0.17'
 
 gem 'capistrano', '~> 3.1.0'
