@@ -8,11 +8,11 @@ gem "mysql2", "~> 0.3.15"
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'turbolinks'
+gem 'coffee-rails', '~> 4.0.1'
+gem 'jquery-rails', '>= 3.1.0'
+gem 'turbolinks', '>= 2.2.2'
 
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.0', '>= 2.0.7'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
@@ -21,9 +21,9 @@ gem 'spring',        group: :development
 
 group :development do
   gem "binding_of_caller"
-  gem "quiet_assets"
+  gem "quiet_assets", ">= 1.0.2"
   gem "better_errors"
-  gem "annotate"
+  gem "annotate", ">= 2.6.3"
 end
 
 gem 'grape', '~> 0.7.0'
