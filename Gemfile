@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.3.5'
+gem 'rails', '5.2.6.2'
 
 gem "mysql2", "~> 0.3.15"
 
-gem 'sass-rails', '~> 5.0.8'
+gem 'sass-rails', '~> 5.0.5'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2.2'
 gem 'jquery-rails', '>= 4.0.1'
