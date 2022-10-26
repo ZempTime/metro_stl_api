@@ -6,9 +6,9 @@ gem 'rails', '6.0.3.5'
 
 gem "mysql2", "~> 0.3.15"
 
-gem 'sass-rails', '~> 5.0.8'
+gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2.2'
+gem 'coffee-rails', '~> 4.0.1'
 gem 'jquery-rails', '>= 4.0.1'
 gem 'turbolinks', '>= 2.2.2'
 
