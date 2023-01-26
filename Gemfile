@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.3.5'
+gem 'rails', '6.1.7.1'
 
 gem "mysql2", "~> 0.3.15"
 
@@ -12,7 +12,7 @@ gem 'coffee-rails', '~> 4.2.2'
 gem 'jquery-rails', '>= 4.0.1'
 gem 'turbolinks', '>= 2.2.2'
 
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
