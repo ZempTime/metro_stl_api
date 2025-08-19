@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.3.5'
+gem 'rails', '7.1.5.2'
 
 gem "mysql2", "~> 0.3.15"
 
@@ -23,7 +23,7 @@ group :development do
   gem "binding_of_caller"
   gem "quiet_assets"
   gem "better_errors"
-  gem "annotate"
+  gem "annotate", ">= 2.6.5"
 end
 
 gem 'grape', '~> 0.7.0'
